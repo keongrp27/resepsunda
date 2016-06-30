@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Resep Sunda</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bahan">halaman bahan</string>
+    <string name="bantuan">halaman bantuan</string>
+    <string name="favorite">halaman favorite</string>
+    <string name="tentang">Aplikasi ini dibuat oleh</string>
+    <string name="lihat">halaman lihat</string>
+    <string name="title_activity_detail_resep_">DetailResep_Activity</string>
+</resources>
