@@ -13,6 +13,7 @@
     <string name="bantuan">halaman bantuan</string>
     <string name="favorite">halaman favorite</string>
     <string name="tentang">Aplikasi ini dibuat oleh</string>
+    <string name="versi">Versi Aplikasi : 1.0</string>
     <string name="lihat">halaman lihat</string>
     <string name="title_activity_detail_resep_">DetailResep_Activity</string>
 </resources>

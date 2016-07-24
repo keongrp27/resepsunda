@@ -12,10 +12,12 @@ import com.example.keong.resepsunda.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Favorite_Fragment extends Fragment {
+public class TentangFragment extends Fragment {
 
 
-    public Favorite_Fragment() {
+
+
+    public TentangFragment() {
         // Required empty public constructor
     }
 
@@ -24,7 +26,7 @@ public class Favorite_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_favorite_, container, false);
+        return inflater.inflate(R.layout.fragment_tentang_, container, false);
     }
 
 }

@@ -1,5 +1,6 @@
 package com.example.keong.resepsunda.halaman;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -11,7 +12,7 @@ import android.view.View;
 
 import com.example.keong.resepsunda.R;
 
-public class DetailResep_Activity extends AppCompatActivity {
+public class DetailResepActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,8 +27,10 @@ public class DetailResep_Activity extends AppCompatActivity {
 
     }
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }

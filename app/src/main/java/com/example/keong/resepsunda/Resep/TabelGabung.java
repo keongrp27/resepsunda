@@ -1,9 +1,9 @@
-package com.example.keong.resepsunda.Gabung;
+package com.example.keong.resepsunda.Resep;
 
 /**
  * Created by keong on 19/06/2016.
  */
-public class tabel_gabung {
+public class TabelGabung {
 
     public String
             id_resep = "",
@@ -12,10 +12,10 @@ public class tabel_gabung {
             alt_bahan1 = "",
             alt_bahan2 = "";
 
-    public tabel_gabung() {
+    public TabelGabung() {
     }
 
-    public tabel_gabung(String id_resep, String id_bahan, String ket_bahan, String alt_bahan1, String alt_bahan2)
+    public TabelGabung(String id_resep, String id_bahan, String ket_bahan, String alt_bahan1, String alt_bahan2)
     {
         this.id_resep = id_resep;
         this.id_bahan = id_bahan;

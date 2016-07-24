@@ -12,10 +12,10 @@ import com.example.keong.resepsunda.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Bantuan_Fragment extends Fragment {
+public class BantuanFragment extends Fragment {
 
 
-    public Bantuan_Fragment() {
+    public BantuanFragment() {
         // Required empty public constructor
     }
 

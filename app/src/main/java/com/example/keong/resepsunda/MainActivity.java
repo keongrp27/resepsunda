@@ -1,11 +1,8 @@
 package com.example.keong.resepsunda;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -15,11 +12,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.example.keong.resepsunda.halaman.BahanSaya_Fragment;
-import com.example.keong.resepsunda.halaman.Bantuan_Fragment;
-import com.example.keong.resepsunda.halaman.Favorite_Fragment;
-import com.example.keong.resepsunda.halaman.LihatResep_fragment;
-import com.example.keong.resepsunda.halaman.Tentang_Fragment;
+import com.example.keong.resepsunda.halaman.BahanSayaFragment;
+import com.example.keong.resepsunda.halaman.BantuanFragment;
+import com.example.keong.resepsunda.halaman.FavoriteFragment;
+import com.example.keong.resepsunda.halaman.LihatResepFragment;
+import com.example.keong.resepsunda.halaman.TentangFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -107,19 +104,19 @@ public class MainActivity extends AppCompatActivity
         //posisi fragment
         switch (position) {
             case 0:
-                fragment = new BahanSaya_Fragment();
+                fragment = new BahanSayaFragment();
                 break;
             case 1:
-                fragment = new LihatResep_fragment();
+                fragment = new LihatResepFragment();
                 break;
             case 2:
-                fragment = new Favorite_Fragment();
+                fragment = new FavoriteFragment();
                 break;
             case 3 :
-                fragment = new Bantuan_Fragment();
+                fragment = new BantuanFragment();
                 break;
             case 4 :
-                fragment = new Tentang_Fragment();
+                fragment = new TentangFragment();
                 break;
 
             default:

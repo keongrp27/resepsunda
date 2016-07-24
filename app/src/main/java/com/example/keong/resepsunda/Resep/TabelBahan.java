@@ -1,18 +1,18 @@
-package com.example.keong.resepsunda.Bahan;
+package com.example.keong.resepsunda.Resep;
 
 /**
  * Created by keong on 19/06/2016.
  */
-public class tabel_bahan {
+public class TabelBahan {
 
     public String
             id_bahan = "",
             nama_bahan = "";
 
-    public tabel_bahan() {
+    public TabelBahan() {
     }
 
-    public tabel_bahan(String id_bahan, String nama_bahan)
+    public TabelBahan(String id_bahan, String nama_bahan)
     {
         this.id_bahan = id_bahan;
         this.nama_bahan = nama_bahan;

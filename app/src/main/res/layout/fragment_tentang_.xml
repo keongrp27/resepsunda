@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.keong.resepsunda.halaman.Tentang_Fragment">
+    tools:context=".halaman.TentangFragment">
 
     
     <LinearLayout
@@ -28,6 +28,17 @@
         android:layout_height="200dp"
         android:src="@drawable/kami"
             android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/versi"
+            android:textColor="#000"
+            android:lineSpacingExtra="1sp"
+            android:lineSpacingMultiplier="1.5"
+            android:textSize="18dp"
+            style="@style/AppTheme"
+            android:layout_gravity="center_horizontal" />/>
 
         <FrameLayout
         android:layout_width="wrap_content"
