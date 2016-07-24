@@ -52,6 +52,7 @@ public class DBHelper extends SQLiteAssetHelper {
                 mDataset.add(item);
             } while (c.moveToNext());
         }
+
         c.close();
         return mDataset;
     }
