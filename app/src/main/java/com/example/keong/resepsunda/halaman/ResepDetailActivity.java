@@ -3,6 +3,7 @@ package com.example.keong.resepsunda.halaman;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.text.Html;
 import android.view.View;
 import android.widget.ImageView;
@@ -26,6 +27,12 @@ public class ResepDetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resep_detail);
+
+
+        Toolbar bar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(bar);
+        getSupportActionBar().setTitle(getIntent().getStringExtra("nm_resep"));
+
 
         db = new DBHelper(this);
         idResep = getIntent().getIntExtra("id_resep",1);

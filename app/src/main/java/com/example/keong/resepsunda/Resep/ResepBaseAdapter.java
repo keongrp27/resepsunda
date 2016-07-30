@@ -73,6 +73,7 @@ public class ResepBaseAdapter extends BaseAdapter {
             public void onClick(View v) {
                 Intent in = new Intent(activity, ResepDetailActivity.class);
                 in.putExtra("id_resep", item.id_resep);
+                in.putExtra("nm_resep", item.nama_resep);
                 activity.startActivity(in);
             }
         });
