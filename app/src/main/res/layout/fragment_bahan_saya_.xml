@@ -12,4 +12,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/searchView"
         android:layout_gravity="center_horizontal" />
+
+
 </LinearLayout>

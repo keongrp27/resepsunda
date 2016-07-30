@@ -16,4 +16,5 @@
     <string name="versi">Versi Aplikasi : 1.0</string>
     <string name="lihat">halaman lihat</string>
     <string name="title_activity_detail_resep_">DetailResep_Activity</string>
+    <string name="search">input bahan anda</string>
 </resources>

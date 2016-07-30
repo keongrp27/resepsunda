@@ -3,6 +3,7 @@ package com.example.keong.resepsunda.halaman;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TabHost;
@@ -39,6 +40,7 @@ public class ResepDetailActivity extends AppCompatActivity {
         spec.setIndicator("BAHAN BAHAN");
         host.addTab(spec);
 
+
         //Tab 2
         spec = host.newTabSpec("CARA MASAK");
         spec.setContent(R.id.tab2);
@@ -53,12 +55,12 @@ public class ResepDetailActivity extends AppCompatActivity {
         StringBuilder bahan = new StringBuilder();
 
         for(TabelGabung item : mDataset) {
-            bahan.append(item.nama_bahan+"\n");
+            bahan.append(item.nama_bahan + " <b>"+item.ket_bahan+"</b><br>");
             caraMasak = item.cara_masak;
             foto = item.foto;
         }
 
-        textBahan.setText(bahan);
+        textBahan.setText(Html.fromHtml(bahan.toString()));
         textCara.setText(caraMasak);
         ImageView gambarResep = (ImageView) findViewById(R.id.detail_resep_gambar);
 

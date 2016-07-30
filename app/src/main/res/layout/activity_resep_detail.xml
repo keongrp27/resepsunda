@@ -2,13 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".MainActivity">
-    
+
     <ImageView
         android:id="@+id/detail_resep_gambar"
         android:layout_width="match_parent"
-        android:layout_height="205dp" />
+        android:layout_height="250dp" />
     
     <TabHost
         android:id="@+id/tabHost"
@@ -39,11 +40,18 @@
                     android:orientation="vertical"
                     android:padding="@dimen/activity_horizontal_margin">
 
-                    <TextView
-                        android:id="@+id/detail_resep_bahan"
+                    <ScrollView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        tools:text="This is tab 1" />
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/detail_resep_bahan"
+                            android:textSize="18sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:lineSpacingExtra="10dp"
+                            tools:text="This is tab 1" />
+                    </ScrollView>
+
 
                 </LinearLayout>
 
@@ -53,12 +61,18 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:padding="@dimen/activity_horizontal_margin">
-
-                    <TextView
-                        android:id="@+id/detail_resep_text"
+                    <ScrollView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        tools:text="This is tab 2" />
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/detail_resep_text"
+                            android:textSize="18sp"
+                            android:lineSpacingExtra="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            tools:text="This is tab 2" />
+                    </ScrollView>
+
 
                 </LinearLayout>
 
