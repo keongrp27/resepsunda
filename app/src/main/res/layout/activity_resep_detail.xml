@@ -6,15 +6,17 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <include
-        layout="@layout/app_bar_main"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/side_nav_bar"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     <ImageView
         android:id="@+id/detail_resep_gambar"
         android:layout_width="match_parent"
-        android:layout_height="250dp" />
+        android:layout_height="200dp" />
     
     <TabHost
         android:id="@+id/tabHost"

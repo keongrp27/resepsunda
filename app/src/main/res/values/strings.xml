@@ -17,4 +17,5 @@
     <string name="lihat">halaman lihat</string>
     <string name="title_activity_detail_resep_">DetailResep_Activity</string>
     <string name="search">input bahan anda</string>
+    <string name="title_activity_bahan">Saran Resep</string>
 </resources>

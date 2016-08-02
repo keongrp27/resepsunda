@@ -19,6 +19,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:textSize="20sp"
-        tools:text="Nama Masakan"/>
+    tools:text="Nama Masakan"/>
 
 </RelativeLayout>

@@ -7,11 +7,40 @@
     android:weightSum="1">
 
 
-    <SearchView
+    <AutoCompleteTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/searchView"
-        android:layout_gravity="center_horizontal" />
+        android:hint="input bahan 1"
+        android:drawablePadding="30dp"
+        android:id="@+id/editText3"
+        android:drawableLeft="@drawable/set_icon_edittext"/>
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="input bahan 2"
+        android:drawablePadding="30dp"
+        android:id="@+id/editText2"
+        android:layout_gravity="right"
+        android:drawableLeft="@drawable/set_icon_edittext"/>
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:drawablePadding="30dp"
+        android:hint="input bahan 3"
+        android:layout_gravity="right"
+        android:drawableLeft="@drawable/set_icon_edittext"/>
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Cari Saran"
+        android:textColor="#ffff"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        android:background="#52bf27" />
 
 
 </LinearLayout>
