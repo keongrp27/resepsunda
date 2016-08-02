@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "com.example.keong.resepsunda"
+        applicationId "com.ksmikreatif.keong.resepsunda"
         minSdkVersion 15
         targetSdkVersion 22
         versionCode 1
