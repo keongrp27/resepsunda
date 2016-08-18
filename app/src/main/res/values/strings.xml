@@ -13,7 +13,14 @@
     <string name="bantuan">halaman bantuan</string>
     <string name="favorite">halaman favorite</string>
     <string name="tentang">Aplikasi ini dibuat oleh</string>
-    <string name="versi">Versi Aplikasi : 1.0</string>
+    <string name="dukung">Fajar ramdhani pebrianto\nTI1260084</string>
+    <string name="teknik">Teknik Informatka 2012\nPoliteknik TEDC Bandung</string>
+    <string name="pembimbing">Pembimbing:</string>
+    <string name="dadan"> Dadan Saepul Ramdan, M.kom</string>
+    <string name="penguji">Penguji:</string>
+    <string name="ridi"> Ridi Satrio Adi, M.kom</string>
+    <string name="cas"> Castaka Agus S., M.kom., MCS</string>
+    <string name="versi">Versi Aplikasi : 1.1</string>
     <string name="lihat">halaman lihat</string>
     <string name="title_activity_detail_resep_">DetailResep_Activity</string>
     <string name="search">input bahan anda</string>

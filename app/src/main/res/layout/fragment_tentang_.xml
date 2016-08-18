@@ -5,6 +5,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".halaman.TentangFragment">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,39 +16,107 @@
         android:orientation="vertical"
         android:weightSum="1">
 
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/tentang"
             android:textColor="#000"
-            android:lineSpacingExtra="1sp"
-            android:lineSpacingMultiplier="1.5"
-            android:textSize="18dp"
+            android:textSize="16dp"
             style="@style/AppTheme"
             android:layout_gravity="center_horizontal" />
 
         <ImageView
-            android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:src="@drawable/kami"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/fajar"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dukung"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            style="@style/AppTheme"
             android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pembimbing"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="left"
+            android:src="@drawable/p_dadan"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dadan"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/penguji"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/p_ridi"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ridi"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/p_cas"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cas"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:padding="10dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/versi"
             android:textColor="#000"
-            android:lineSpacingExtra="1sp"
-            android:lineSpacingMultiplier="1.5"
-            android:textSize="18dp"
+            android:textSize="16sp"
+            android:padding="20dp"
             style="@style/AppTheme"
-            android:layout_gravity="center_horizontal" />/>
+            android:layout_gravity="center_horizontal" />
 
-        <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"></FrameLayout>
+
 
     </LinearLayout>
 
+    </ScrollView>
 
 </RelativeLayout>
