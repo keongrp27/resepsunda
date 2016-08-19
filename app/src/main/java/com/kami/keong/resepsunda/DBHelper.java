@@ -84,16 +84,18 @@ public class DBHelper extends SQLiteAssetHelper {
     public ArrayList<TabelResep> getCariResep(String cari1, String cari2, String cari3) {
         SQLiteDatabase db = this.getWritableDatabase();
         ArrayList<TabelResep> mDataset = new ArrayList<>();
-        Cursor c = db.rawQuery("select c.id_resep, c.nama_resep, c.cara_masak, c.foto  from tabel_gabung a inner join tabel_bahan b on a.id_bahan = b.id_bahan inner join tabel_resep c on a.id_resep = c.id_resep where b.id_bahan in ("+cari1+","+cari2+","+cari3+") group by nama_resep", null);
+        Cursor c = db.rawQuery("select c.id_resep, c.nama_resep, c.cara_masak, c.foto, count(*) jml  from tabel_gabung a inner join tabel_bahan b on a.id_bahan = b.id_bahan inner join tabel_resep c on a.id_resep = c.id_resep where b.id_bahan in ("+cari1+","+cari2+","+cari3+") group by nama_resep", null);
 
         if (c.moveToFirst()) {
             do {
-                TabelResep item = new TabelResep(
-                        c.getInt(c.getColumnIndex("id_resep")),
-                        c.getString(c.getColumnIndex("nama_resep")),
-                        c.getString(c.getColumnIndex("cara_masak")),
-                        c.getString(c.getColumnIndex("foto")));
-                mDataset.add(item);
+                if(c.getInt(c.getColumnIndex("jml")) >= 3) {
+                    TabelResep item = new TabelResep(
+                            c.getInt(c.getColumnIndex("id_resep")),
+                            c.getString(c.getColumnIndex("nama_resep")),
+                            c.getString(c.getColumnIndex("cara_masak")),
+                            c.getString(c.getColumnIndex("foto")));
+                    mDataset.add(item);
+                }
             } while (c.moveToNext());
         }
 
